@@ -46,7 +46,7 @@ def score_game_midl(random_predict_midl) -> int:
     Returns:
         int: mean number of tries
     """
-    
+
     count_ls = []
     np.random.seed(1)  # fixed random seed for constancy.
     random_array = np.random.randint(1, 101, size=(1000))  # list of integers
