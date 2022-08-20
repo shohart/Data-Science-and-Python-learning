@@ -17,10 +17,9 @@ def random_predict_midl(number:int=np.random.randint(1, 101)) -> int:
         int: Number of cycles/tries
     """
     
-    if number not in range(1,101): # protection form a wrong input
+    if number not in range(1, 101): # protection form a wrong input
         raise ValueError('Number not in range!')
-        return None
-     
+             
     min, max = 1, 101 # set minimum and maximum numbers in range.
     count = 0 # number of tries
     
@@ -35,7 +34,7 @@ def random_predict_midl(number:int=np.random.randint(1, 101)) -> int:
             min = midl
         
         else:
-  #          print(f'Number is found in {count} tries! It is {midl}!') # Informative message. If used for a single call.
+  #          print(f'Number is found in {count} tries! It is {midl}!') # Informative message. Can be useful if function is used for a single call.
             return count
 
 def score_game_midl(random_predict_midl) -> int:
@@ -55,7 +54,9 @@ def score_game_midl(random_predict_midl) -> int:
         count_ls.append(random_predict_midl(number))
 
     score = int(np.mean(count_ls)) 
+    
     print(f"Your algorithm can solve a task in {score} tries average.")
+    
     return score
 
 if __name__ == "__main__":
