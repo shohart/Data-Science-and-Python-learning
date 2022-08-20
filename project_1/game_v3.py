@@ -1,6 +1,6 @@
 """Guess a number game
-Computer generates a random number and tries 
-to guess that number in minimum number 
+Computer generates a random integer and tries 
+to guess that integer in minimum number 
 of tries possible.
 """
 
@@ -25,7 +25,7 @@ def random_predict_midl(number:int=np.random.randint(1, 101)) -> int:
     count = 0 # number of tries
     
     while True: 
-        count+=1
+        count += 1
         midl = (min+max) // 2
     
         if midl > number:
@@ -42,7 +42,7 @@ def score_game_midl(random_predict_midl) -> int:
     """Benchmark, how much tries does our algorythm need to solve a task.
 
     Args:
-        random_predict ([type]): prediction fuction
+        random_predict_midl (): prediction fuction
 
     Returns:
         int: mean number of tries
