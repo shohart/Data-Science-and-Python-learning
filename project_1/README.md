@@ -1,12 +1,12 @@
 # Project 1. Task 8.1 of SkillFactory python course.
 
 ## Table of contents  
-[1. Project description](.README.md#Project_description)  
-[2. Which case do we solve?](.README.md#Which_case_do_we_solve?)  
-[3. Data summary](.README.md#Summary-data)  
-[4. Project stages](.README.md#project-stages)  
-[5. Result](.README.md#Result)    
-[6. Summary](.README.md#conclusions) 
+[1. Project description](README.md#Project_description)  
+[2. Which case do we solve?](README.md#Which_case_do_we_solve?)  
+[3. Data summary](README.md#Summary-data)  
+[4. Project stages](README.md#project-stages)  
+[5. Result](README.md#Result)    
+[6. Summary](README.md#conclusions) 
 
 ### Project description
 
@@ -32,7 +32,7 @@ Learning to write good code in python
 ### Data summary
 No additional data used in this project.
   
-:arrow_up:[to table of contents](.README.md#Table_of_contents)
+:arrow_up:[to table of contents](README.md#Table_of_contents)
 
 
 ### Stages in the project  
@@ -41,7 +41,7 @@ No additional data used in this project.
 - Then we need to check our code if it maches PEP standarts.
 - Finally we need to upload a code to GitHub and make shure that GitHub is designed accordingly (includind documentation, file structure, code repeatability, etc).
 
-:arrow_up:[to table of contents](.README.md#Table_of_contents)
+:arrow_up:[to table of contents](README.md#Table_of_contents)
 
 
 ### Results:  
@@ -53,13 +53,13 @@ Function **score_game_midl()** runs predict function 1000 times and return avera
 
 Task conditions are fulfilled.
 
-:arrow_up:[to table of contents](.README.md#Table_of_contents)
+:arrow_up:[to table of contents](README.md#Table_of_contents)
 
 
 ### Conclusions:  
 ....
 
-:arrow_up:[to table of contents](.README.md#Table_of_contents)
+:arrow_up:[to table of contents](README.md#Table_of_contents)
 
 
 If you find the information on this project interesting or useful I would be very grateful if you would mark the repository and profile ⭐️⭐️⭐️- by Shohart (with SkillFactory)
