@@ -34,7 +34,6 @@ def random_predict_midl(number:int=np.random.randint(1, 101)) -> int:
             min = midl
         
         else:
-  #          print(f'Number is found in {count} tries! It is {midl}!') # Informative message. Can be useful if function is used for a single call.
             return count
 
 def score_game_midl(random_predict_midl) -> int:
