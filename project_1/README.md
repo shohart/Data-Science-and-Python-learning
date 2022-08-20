@@ -2,7 +2,7 @@
 
 ## Table of contents  
 [1. Project description](README.md#Project-description)  
-[2. What kind of case are we solving?](README.md#What-kind-of-case-are-we-solving?)  
+[2. What kind of case are we solving?](README.md#What-kind-of-case-are-we-solving)  
 [3. Data summary](README.md#Data-summary)  
 [4. Stages in the project](README.md#Stages-in-the-project)  
 [5. Results and conclusions](README.md#Results-and-conclusions)    
