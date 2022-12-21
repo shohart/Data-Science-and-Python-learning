@@ -1,3 +1,5 @@
+import numpy as np
+
 def outliers_iqr(data, feature):
     x = data[feature]
     quartile_1, quartile_3 = x.quantile(0.25), x.quantile(0.75),
