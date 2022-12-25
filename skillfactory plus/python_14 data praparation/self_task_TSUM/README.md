@@ -15,7 +15,7 @@ The **outliers_z_score** function works similarly to **outliers_iqr**, but inste
 It then returns the identified outliers and the cleaned dataset as the first and second outputs, respectively.
 
 The 
-uniform_finder
+**uniform_finder**
  function takes in a dataframe (
 *dataframe*
 ) and an optional parameter 
