@@ -1,5 +1,6 @@
 import numpy as np
 
+
 def outliers_iqr(data, feature, left=1.5, right=1.5, log_scale=False):
     if log_scale:
         x = np.log(data[feature])
