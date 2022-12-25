@@ -1,6 +1,6 @@
 import numpy as np
 
-def outliers_iqr_mod(data, feature, left=1.5, right=1.5, log_scale=False):
+def outliers_iqr(data, feature, left=1.5, right=1.5, log_scale=False):
     if log_scale:
         x = np.log(data[feature])
     else:
@@ -13,7 +13,7 @@ def outliers_iqr_mod(data, feature, left=1.5, right=1.5, log_scale=False):
     cleaned = data[(x>lower_bound) & (x < upper_bound)]
     return outliers, cleaned
 
-def outliers_z_score_mod(data, feature, log_scale=False, left=3, right=3):
+def outliers_z_score(data, feature, log_scale=False, left=3, right=3):
     if log_scale:
         x = np.log(data[feature]+1)
     else:
