@@ -10,9 +10,10 @@ def outliers_iqr(data, feature, left=1.5, right=1.5, log_scale=False):
     iqr = quartile_3 - quartile_1
     lower_bound = quartile_1 - (iqr * left)
     upper_bound = quartile_3 + (iqr * right)
-    outliers = data[(x<lower_bound) | (x > upper_bound)]
-    cleaned = data[(x>lower_bound) & (x < upper_bound)]
+    outliers = data[(x < lower_bound) | (x > upper_bound)]
+    cleaned = data[(x > lower_bound) & (x < upper_bound)]
     return outliers, cleaned
+
 
 def outliers_z_score(data, feature, log_scale=False, left=3, right=3):
     if log_scale:
@@ -27,15 +28,16 @@ def outliers_z_score(data, feature, log_scale=False, left=3, right=3):
     cleaned = data[(x > lower_bound) & (x < upper_bound)]
     return outliers, cleaned
 
-def uninform_finder(dataframe, thresh=0.95):
-    #список неинформативных признаков
-    low_information_cols = [] 
 
-    #цикл по всем столбцам
+def uninform_finder(dataframe, thresh=0.95):
+    # список неинформативных признаков
+    low_information_cols = []
+
+    # цикл по всем столбцам
     for col in dataframe.columns:
-        #наибольшая относительная частота в признаке
+        # наибольшая относительная частота в признаке
         top_freq = dataframe[col].value_counts(normalize=True).max()
-        #доля уникальных значений от размера признака
+        # доля уникальных значений от размера признака
         nunique_ratio = dataframe[col].nunique() / dataframe[col].count()
         # сравниваем наибольшую частоту с порогом
         if top_freq > thresh:
