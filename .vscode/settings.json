@@ -1,4 +1,7 @@
 {
     "notebook.output.textLineLimit": 65,
-    "python.analysis.typeCheckingMode": "basic"
+    "python.analysis.typeCheckingMode": "basic",
+    "workbench.editorAssociations": {"*.ipynb": "jupyter.notebook.ipynb"},
+
 }
+
