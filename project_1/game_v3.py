@@ -6,7 +6,7 @@ a minimum number of tries possible.
 import numpy as np
 
 
-def random_predict_midl(number: int=np.random.randint(1, 101)) -> int:
+def random_predict_midl(number: integ=np.random.randint(1, 101)) -> int:
     """Find a random number
 
     Args:
@@ -14,7 +14,7 @@ def random_predict_midl(number: int=np.random.randint(1, 101)) -> int:
         Defaults to randomly generated number.
 
     Returns:
-        int: Number of cycles/tries
+        integ: Number of cycles/tries
     """
 
     if number not in range(1, 101):  # protection form a wrong input

@@ -3,7 +3,8 @@ Your pc gueses a number that you picked by itself!
 """
 import numpy as np
 
-def random_predict(number:int = 1) -> int:
+
+def random_predict(number: int = 1) -> int:
     """Function to try guess a number using random method.
 
     Args:
@@ -20,6 +21,8 @@ def random_predict(number:int = 1) -> int:
         if number == predict_number:
             break
     return(count)
+
+
 def score_game(random_predict) -> int:
     """Score prediction method
 
@@ -44,4 +47,4 @@ if __name__ == '__main__':
     #RUN
     score_game(random_predict)
 
-#print(f'Number of tries: {random_predict(90)}')
+# print(f'Number of tries: {random_predict(90)}')
