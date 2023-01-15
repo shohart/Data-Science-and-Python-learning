@@ -17,6 +17,23 @@ values = {
 
 
 class Card():
+    """
+    This class represents a playing card.
+
+    Args:
+    suit (str): The suit of the card (e.g. "Hearts" or "Spades")
+    rank (str): The rank of the card (e.g. "Ace" or "King")
+
+    Attributes:
+    suit (str): The suit of the card (e.g. "Hearts" or "Spades")
+    rank (str): The rank of the card (e.g. "Ace" or "King")
+    value (int): The numerical value of the card
+
+    Methods:
+    init(): Initializes the playing card object
+    str(): Returns the string representation of the card
+    """
+
     def __init__(self, suit, rank):
         self.suit = suit
         self.rank = rank
@@ -27,6 +44,13 @@ class Card():
 
 
 class Deck():
+    """
+    This class creates a Deck object which has two methods:
+    shuffle() which shuffles the deck and deal_one() which deals one card 
+    from the deck.
+    The Deck object is initialized with a list of all the cards.
+    """
+
     def __init__(self):
         self.all_cards = []
 
@@ -45,6 +69,22 @@ class Deck():
 
 
 class Player():
+    """
+    This class represents a Player in a game.
+
+    It has the following attributes:
+
+    name: The name of the player
+    all_cards: A list of all the cards in the player's hand
+    It has the following methods:
+
+    remove_one(): Removes and returns the first card in the player's hand
+    add_cards(): Takes a new card or list of cards and adds them to the 
+    player's hand
+    shuffle(): Shuffles the player's cards
+    str(): Returns a string representation of the player and the number 
+    of cards in their hand
+    """
 
     def __init__(self, name):
         self.name = name
@@ -85,7 +125,14 @@ game_on = True
 round_num = 0
 
 # game loops
+
 while game_on:
+    """Runs the game loop while the game is still on.
+
+    Increments the round number and checks if either player is out of cards.
+    If so, ends the loop and prints out the winner. Otherwise, continues 
+    the game loop.
+    """
     round_num += 1
     print(f'Round {round_num}')
 
@@ -110,7 +157,12 @@ while game_on:
 
     at_war = True
     while at_war:
+        """Runs the game loop while the players are at war.
 
+        Checks the values of the cards and adds them to the winner's 
+        hand. If the values are the same, continues the loop until 
+        either player runs out of cards.
+        """
         if player_one_cards[-1].value > player_two_cards[-1].value:
             player_one.add_cards(player_one_cards)
             player_one.add_cards(player_two_cards)
