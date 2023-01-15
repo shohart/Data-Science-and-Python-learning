@@ -28,7 +28,7 @@ This class creates a Deck object which has two methods: shuffle() which shuffles
 
 This class represents a Player in a game. It has two attributes: name and all_cards, and four methods: remove_one(), add_cards(), shuffle(), and str().
 
-### How to Play
+## How to Play
 
 - Create two Player objects.
 - Create a Deck object and shuffle it.
