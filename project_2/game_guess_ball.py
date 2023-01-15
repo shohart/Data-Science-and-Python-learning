@@ -19,9 +19,9 @@ mixed_list = shuffled_lst(guess_list)
 
 
 def player_guess():
-    guess = ''
-    while guess not in ['0', '1', '2']:
-        guess = input('Pick a number to guess: 0, 1 or 2:\n')
+    x = ''
+    while x not in ['0', '1', '2']:
+        x = input('Pick a number to guess: 0, 1 or 2:\n')
 
     return int(guess)
 
@@ -29,8 +29,8 @@ def player_guess():
 guess = player_guess()
 
 
-def check_guess(lst, guess):
-    if lst[guess] == 'O':
+def check_guess(lst, x):
+    if lst[x] == 'O':
         print(f'\nCorrect!\n{mixed_list}\n')
     else:
         print(f'\nWrong! Try again!\n{mixed_list}')
